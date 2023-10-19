@@ -7,6 +7,7 @@ import Register from "../Pages/Register/Register";
 import SignIn from "../Pages/SignIn/SignIn";
 import MyCart from "../Pages/MyCart/MyCart";
 import PrivateAddProduct from "../Ptivate/PrivateAddProduct";
+import Brand from "../Pages/Brand/Brand";
 
 const router = createBrowserRouter([
     {
@@ -33,7 +34,14 @@ const router = createBrowserRouter([
         {
             path:'/mycart',
             element:<MyCart></MyCart>
+        },
+      
+        {
+            path:"/products/:id",
+            element:<Brand></Brand>,
+            loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
         }
+
       ]
     },
   ]);

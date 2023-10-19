@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "brand_name": "Apple",
+      "image": "https://i.ibb.co/jrss4hK/wesson-wang-y0-v-Fx-OHayg-unsplash.jpg"
+    },
+    {
+      "id": 2,
+      "brand_name": "Samsung",
+      "image": "https://i.ibb.co/1XqFpyr/jonathan-kemper-po-Sms2-Ezf-NY-unsplash.jpg"
+    },
+    {
+      "id": 3,
+      "brand_name": "Sony",
+      "image": "https://i.ibb.co/RDgXQ3L/boliviainteligente-Hv4-KMUMQ4-Rw-unsplash.jpg"
+    },
+    {
+      "id": 4,
+      "brand_name": "Google",
+      "image": "https://i.ibb.co/PDrcLwg/arthur-osipyan-5-Oyv-N4-Yx46-E-unsplash.jpg"
+    },
+    {
+      "id": 5,
+      "brand_name": "Intel",
+      "image": "https://i.ibb.co/mXGdcFJ/wallpaperflare-com-wallpaper-1.jpg"
+    },
+    {
+      "id": 6,
+      "brand_name": "Asus",
+      "image": "https://i.ibb.co/wYRXzTR/ASUS-LOGO.png"
+    }
+  ]
+  
