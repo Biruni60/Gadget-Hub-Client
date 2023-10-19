@@ -1,7 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import './Navbar.css'
+import { useContext } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const NavBar = () => {
+  const {user,logOut}=useContext(AuthContext)
+  const handleSignOut=()=>{
+    logOut()
+    .then()
+    .then()
+  }
     const links=<>
         <li><NavLink to='/'>HOME</NavLink></li>
         <li><NavLink to='/addproduct'>ADD PRODUCT</NavLink></li>
@@ -18,7 +26,30 @@ const NavBar = () => {
       <ul tabIndex={0} className=" dropdown-content my-3 z-[1] p-4 shadow bg-red-100 rounded-box w-60 flex flex-col gap-5">
        {
         links
+       
        }
+       <div >
+        {/* Open the modal using document.getElementById('ID').showModal() method */}
+<button onClick={()=>document.getElementById('my_modal_1').showModal()}>USER</button>
+<dialog id="my_modal_1" className="modal">
+  <div className="modal-box">
+    {
+   user? <div>
+      <p>{user.email}</p>
+       <p>{user.displayName}</p>
+       <img src={user.photoURL}  />
+    </div>:
+    <p>OPPS! No User Availble</p>
+    }
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+       </div>
       </ul>
     </div>
   <div className="flex items-center gap-2  ">
@@ -30,11 +61,35 @@ const NavBar = () => {
     <ul className="flex gap-10 text-xl font-bold">
 {
     links
+    
 }
+
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end gap-2">
+  <div className="hidden lg:flex">
+        {/* Open the modal using document.getElementById('ID').showModal() method */}
+<button className="btn btn-outline text-white text-xl " onClick={()=>document.getElementById('my_modal_1').showModal()}>USER</button>
+<dialog id="my_modal_1" className="modal">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg">USER</h3>
+    <p className="py-4">Press ESC key or click the button below to close</p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+   </div>
+   {
+    user?
+    <button onClick={handleSignOut} className="btn btn-outline text-white text-xl font-medium">Log Out</button>:
     <Link to='/signin'><button className="btn btn-outline text-white text-xl font-medium">Log In</button></Link>
+    
+   }
+
   </div>
 </div>
         </nav>
