@@ -16,6 +16,15 @@ const AddProduct = () => {
        const rating=form.rating.value;
         const user={image,name,brandName,type,price,shortDescription,rating}
        console.log(user);
+       fetch('http://localhost:5000/allproduct',{
+        method:"post",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(user)
+       })
+       .then(res=>res.json())
+       .then(data=>console.log(data))
      }
     return (
         <div className="bg-[url('https://i.ibb.co/3YLC8ck/Curve-Line-1.jpg')]  p-2 lg:p-10">

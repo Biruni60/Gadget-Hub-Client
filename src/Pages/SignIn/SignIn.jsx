@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { useContext, useState } from "react";
 
@@ -7,6 +7,9 @@ const SignIn = () => {
     const {logInUser,googleLogIn}=useContext(AuthContext);
     const [success,setSuccess]=useState('')
     const [signInError,setSignInError]=useState('')
+    const location=useLocation();
+    const navigate=useNavigate()
+    console.log(location.state);
     const handleSignIn=e=>{
         e.preventDefault();
         const form=e.target;
@@ -18,7 +21,9 @@ const SignIn = () => {
         logInUser(email,password)
         .then(result=>{
             console.log(result.user);
+            navigate(location.state?  location.state:'/')
             setSuccess('User Log In Successfull');
+            
         })
         .catch(error=>{
             console.log(error.message);
@@ -30,6 +35,7 @@ const SignIn = () => {
      googleLogIn()
      .then(result=>{
         console.log(result.user);
+        navigate(location.state?  location.state:'/')
         setSuccess('User Log In Successfull');
      })
      .catch(error=>{
