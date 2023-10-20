@@ -3,15 +3,14 @@
 const Faq = () => {
     return (
         <div className="p-5 my-10">
-        <h2 className="text-center text-4xl font-semibold mb-10git add .
-        ">#FAQ</h2>
+        <h2 className="text-center text-4xl font-semibold mb-10">#FAQ</h2>
             <div className="collapse bg-base-200">
   <input type="radio" name="my-accordion-1" checked="checked" /> 
   <div className="collapse-title text-xl font-medium">
   Are the products on your website authentic and brand-certified?
   </div>
   <div className="collapse-content"> 
-    <p>Yes, all the products available on our website are 100% authentic and brand-certified. We source our products directly from authorized distributors and manufacturers, including Sony, Google, Apple, Samsung, Asus, Intel, and many other reputable brands. This ensures that you're getting genuine, high-quality products with warranties and customer support backed by the respective brands.</p>
+    <p>Yes, all the products available on our website are 100% authentic and brand-certified. We source our products directly from authorized distributors and manufacturers, including Sony, Google, Apple, Samsung, Asus, Intel, and many other reputable brands. This ensures that you are getting genuine, high-quality products with warranties and customer support backed by the respective brands.</p>
   </div>
 </div>
 <div className="collapse bg-base-200">
@@ -29,7 +28,7 @@ const Faq = () => {
   What is your return and refund policy?
   </div>
   <div className="collapse-content"> 
-    <p>We understand that sometimes, a product may not meet your expectations. If you're not satisfied with your purchase, we have a hassle-free return and refund policy. You can initiate a return within 30 days of receiving your product, and we'll provide you with instructions on how to send it back. Once we receive the returned item and confirm its condition, we will process a refund or offer a replacement, depending on your preference. Please refer to our "Return Policy" page for more details on the process and any applicable terms and conditions</p>
+    <p>We understand that sometimes, a product may not meet your expectations. If you are not satisfied with your purchase, we have a hassle-free return and refund policy. You can initiate a return within 30 days of receiving your product, and we all provide you with instructions on how to send it back. Once we receive the returned item and confirm its condition, we will process a refund or offer a replacement, depending on your preference. Please refer to our  Return Policy page for more details on the process and any applicable terms and conditions</p>
   </div>
 </div>
         </div>
