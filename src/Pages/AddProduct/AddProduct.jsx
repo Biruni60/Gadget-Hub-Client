@@ -27,8 +27,12 @@ const AddProduct = () => {
         body:JSON.stringify(user)
        })
        .then(res=>res.json())
-       .then(data=>console.log(data))
-       toast('Product Added Successfully')
+       .then(data=>{
+        if(data.insertedId){
+            toast('Product Added Successfully')
+        }
+       })
+      
      }
     return (
         <div className="bg-[url('https://i.ibb.co/3YLC8ck/Curve-Line-1.jpg')]  p-2 lg:p-10">

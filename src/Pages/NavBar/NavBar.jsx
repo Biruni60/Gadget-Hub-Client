@@ -1,10 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import './Navbar.css'
-import { useContext } from "react";
+import { useContext} from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const NavBar = () => {
-  const {user,logOut}=useContext(AuthContext)
+const {user,logOut}=useContext(AuthContext)
   const handleSignOut=()=>{
     logOut()
     .then()
