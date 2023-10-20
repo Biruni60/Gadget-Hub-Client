@@ -1,4 +1,5 @@
 import {PropTypes} from "prop-types"
+import { Link } from "react-router-dom";
 
 const BrandItem = ({brandItem}) => {
     const {_id,image,name,brandName,type,price,rating}=brandItem;
@@ -15,8 +16,8 @@ const BrandItem = ({brandItem}) => {
      <p><span className="text-lg font-medium" >Rating: </span>{rating}</p>
     <div className="card-actions">
       <div className="flex gap-24 my-4 ">
-      <button className="btn btn-outline text-sky-500 ">View Detail</button>
-      <button className="btn btn-outline text-sky-500">Update</button>
+      <Link to={`/brand/${_id}`}><button className="btn btn-outline text-sky-500 ">View Detail</button></Link>
+      <Link to={`/update/${_id}`}><button className="btn btn-outline text-sky-500">Update</button></Link>
       </div>
     </div>
   </div>

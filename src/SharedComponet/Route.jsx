@@ -8,6 +8,8 @@ import SignIn from "../Pages/SignIn/SignIn";
 import MyCart from "../Pages/MyCart/MyCart";
 import PrivateAddProduct from "../Ptivate/PrivateAddProduct";
 import Brand from "../Pages/Brand/Brand";
+import ProductDetail from "../Pages/ProductDetail/ProductDetail";
+import UpdateDetail from "../Pages/UpdateDetail/UpdateDetail";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +42,17 @@ const router = createBrowserRouter([
             path:"/products/:id",
             element:<Brand></Brand>,
             loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+        },
+        {
+            path:'/brand/:id',
+            element:<ProductDetail></ProductDetail>,
+            loader:({params})=>fetch(`http://localhost:5000/brand/${params.id}`)
+        },
+        {
+            path:"/update/:id",
+            element:<UpdateDetail></UpdateDetail>,
+
+            loader:({params})=>fetch(`http://localhost:5000/update/${params.id}`)
         }
 
       ]
