@@ -5,7 +5,7 @@ import TrendingDetail from "../TrendingDetail/TrendingDetail";
 const Trending = () => {
     const [products,setProducts]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:5000/allproduct")
+        fetch("https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/allproduct")
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])

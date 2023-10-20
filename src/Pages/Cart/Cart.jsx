@@ -7,7 +7,7 @@ const Cart = ({product,setProducts,products}) => {
  
     const {_id,image,name,price}=product
     const handleDelete=()=>{
-        fetch(`http://localhost:5000/cart/${_id}`,{
+        fetch(`https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/cart/${_id}`,{
             method:"DELETE"
         },
         )

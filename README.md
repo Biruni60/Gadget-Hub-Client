@@ -1,8 +1,11 @@
-# React + Vite
+Website Name:GADGETHUB
+live link:https://gadget-hub-auth.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Feature of our website:
+1.User Authentication.
+2.User Can Add Product Using Add Product Page.
+3.User Can See Product By Clicking Brand Card.
+4.User Can Update Existing Product.
+5>User Can Add Product To Cart And Also Delete It.

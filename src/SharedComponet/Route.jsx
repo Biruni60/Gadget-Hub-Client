@@ -36,25 +36,25 @@ const router = createBrowserRouter([
         {
             path:'/mycart',
             element:<PrivateAddProduct><MyCart></MyCart></PrivateAddProduct>,
-            loader:()=>fetch(`http://localhost:5000/cart`)
+            loader:()=>fetch(`https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/cart`)
             
         },
       
         {
             path:"/products/:id",
             element:<Brand></Brand>,
-            loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+            loader:({params})=>fetch(`https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/products/${params.id}`)
         },
         {
             path:'/brand/:id',
             element:<PrivateAddProduct><ProductDetail></ProductDetail></PrivateAddProduct>,
-            loader:({params})=>fetch(`http://localhost:5000/brand/${params.id}`)
+            loader:({params})=>fetch(`https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/brand/${params.id}`)
         },
         {
             path:"/update/:id",
             element:<PrivateAddProduct><UpdateDetail></UpdateDetail></PrivateAddProduct>,
 
-            loader:({params})=>fetch(`http://localhost:5000/update/${params.id}`)
+            loader:({params})=>fetch(`https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/update/${params.id}`)
         }
 
       ]
