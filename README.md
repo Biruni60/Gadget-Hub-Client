@@ -1,9 +1,7 @@
 Website Name:GADGETHUB
 live link:https://gadget-hub-auth.web.app/
 
-vercel backend link:https://gadget-hub-server.vercel.app/
-
-
+vercel backend link:https://gadget-hub-server-b9ku9c0dp-biru60s-projects.vercel.app/
 
 Feature of our website:
 1.User Authentication.

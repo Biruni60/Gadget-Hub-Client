@@ -11,7 +11,7 @@ const ProductDetail = () => {
     const {image,shortDescription,price,name}=product;
     const handleAddToCart=()=>{
       const productDetail={image,name,price,uid};
-      fetch('https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/cart',{
+      fetch('https://gadget-hub-server-b9ku9c0dp-biru60s-projects.vercel.app/cart',{
         method:"post",
         headers:{
             "content-type":"application/json"

@@ -19,7 +19,7 @@ const AddProduct = () => {
        form.reset();
         const user={image,name,brandName,type,price,shortDescription,rating}
        console.log(user);
-       fetch('https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/allproduct',{
+       fetch('https://gadget-hub-server-b9ku9c0dp-biru60s-projects.vercel.app/allproduct',{
         method:"post",
         headers:{
             "content-type":"application/json"

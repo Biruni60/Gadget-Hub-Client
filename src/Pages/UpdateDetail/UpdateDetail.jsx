@@ -20,7 +20,7 @@ const UpdateDetail = () => {
          const price=form.price.value;
        const rating=form.rating.value;
         const user={image,name,brandName,type,price,rating};
-        fetch(`https://gadget-hub-server-gven5krvm-biru60s-projects.vercel.app/update/${_id}`,{
+        fetch(`https://gadget-hub-server-b9ku9c0dp-biru60s-projects.vercel.app/update/${_id}`,{
             method:"PUT",
             headers:{
                 "content-type":"application/json"
