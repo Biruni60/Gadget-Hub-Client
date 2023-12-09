@@ -3,6 +3,8 @@ Website Name:GADGETHUB
 live link:https://gadget-hub-auth.web.app/
 
 
+It is a e-commerce Website Focusing on Selling Electronics Products.
+
 Feature of our website:
 
 1.User Authentication.
